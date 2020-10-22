@@ -24,7 +24,7 @@ int main(int argc, const char * argv[]) {
     }
     
     while(1){
-        std::string str = "this is for test";
+        std::string str = "this is from test client";
         write(fd, str.c_str(), str.length()); // 往管道里写内容
         printf("after write to fifo\n");
         sleep(2);
